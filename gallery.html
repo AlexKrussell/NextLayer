@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - NextLayer</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 3a3 3 0 00-3 3v12a3 3 0 003 3 3 3 0 003-3 3 3 0 00-3-3H6a3 3 0 00-3 3 3 3 0 003 3 3 3 0 003-3V6a3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3h12a3 3 0 003-3 3 3 0 00-3-3z"/>
+                    </svg>
+                </div>
+                <span class="logo-text">NextLayer</span>
+            </a>
+
+            <div class="navbar-menu">
+                <a href="index.html" class="navbar-link">Home</a>
+                <a href="gallery.html" class="navbar-link active">Gallery</a>
+                <a href="generator.html" class="navbar-link">Idea Generator</a>
+                <a href="contact.html" class="navbar-link">Contact</a>
+                <a href="copyright.html" class="navbar-link">Copyright</a>
+            </div>
+
+            <div class="navbar-actions">
+                <button class="search-btn" aria-label="Search">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"/>
+                        <path d="m21 21-4.35-4.35"/>
+                    </svg>
+                </button>
+                <button class="signin-btn">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
+                        <circle cx="12" cy="7" r="4"/>
+                    </svg>
+                    <span>Sign In</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery Header -->
+    <div class="gallery-header">
+        <div class="container">
+            <h1 class="page-title">Discover Designs</h1>
+            
+            <div class="search-container">
+                <div class="search-box">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"/>
+                        <path d="m21 21-4.35-4.35"/>
+                    </svg>
+                    <input type="text" placeholder="Search for models (e.g. 'vase', 'mechanical')" class="search-input">
+                </div>
+                <button class="filter-btn">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/>
+                    </svg>
+                    Filters
+                </button>
+            </div>
+
+            <div class="category-tabs">
+                <button class="category-tab active">All</button>
+                <button class="category-tab">Home Decor</button>
+                <button class="category-tab">Engineering</button>
+                <button class="category-tab">Miniatures</button>
+                <button class="category-tab">Lighting</button>
+                <button class="category-tab">Organization</button>
+                <button class="category-tab">Garden</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Design Card 1 -->
+                <div class="design-card">
+                    <div class="design-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1703221561813-cdaa308cf9e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHwzRCUyMHByaW50ZWQlMjBvYmplY3QlMjB2YXNlfGVufDF8fHx8MTc3MTM4MTY3Nnww&ixlib=rb-4.1.0&q=80&w=1080" alt="Minimalist Geometric Vase" class="design-image">
+                        <div class="design-actions">
+                            <button class="action-btn" aria-label="Like">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                                </svg>
+                            </button>
+                            <button class="action-btn" aria-label="Download">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+                                    <polyline points="7 10 12 15 17 10"/>
+                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="design-category">Home Decor</div>
+                    </div>
+                    <div class="design-info">
+                        <div class="design-header">
+                            <h3 class="design-title">Minimalist Geometric Vase</h3>
+                            <span class="design-price">$12.00</span>
+                        </div>
+                        <div class="design-creator">
+                            <div class="creator-avatar">P</div>
+                            <span class="creator-name">by PolyMkr</span>
+                        </div>
+                        <div class="design-stats">
+                            <div class="design-metrics">
+                                <div class="metric">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                                    </svg>
+                                    2.4k
+                                </div>
+                                <div class="metric">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                        <circle cx="12" cy="12" r="3"/>
+                                    </svg>
+                                    15k
+                                </div>
+                            </div>
+                            <button class="view-details">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design Card 2 -->
+                <div class="design-card">
+                    <div class="design-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1739515054273-a2956b1e094a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHwzRCUyMHByaW50ZWQlMjBtZWNoYW5pY2FsJTIwcGFydCUyMGdlYXJ8ZW58MXx8fHwxNzcxMzgxNjc4fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Precision Mechanical Gears" class="design-image">
+                        <div class="design-actions">
+                            <button class="action-btn" aria-label="Like">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                                </svg>
+                            </button>
+                            <button class="action-btn" aria-label="Download">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+                                    <polyline points="7 10 12 15 17 10"/>
+                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="design-category">Engineering</div>
+                    </div>
+                    <div class="design-info">
+                        <div class="design-header">
+                            <h3 class="design-title">Precision Mechanical Gears</h3>
+                            <span class="design-price">Free</span>
+                        </div>
+                        <div class="design-creator">
+                            <div class="creator-avatar">T</div>
+                            <span class="creator-name">by TechArt</span>
+                        </div>
+                        <div class="design-stats">
+                            <div class="design-metrics">
+                                <div class="metric">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                                    </svg>
+                                    850
+                                </div>
+                                <div class="metric">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                        <circle cx="12" cy="12" r="3"/>
+                                    </svg>
+                                    5.2k
+                                </div>
+                            </div>
+                            <button class="view-details">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design Card 3 -->
+                <div class="design-card">
+                    <div class="design-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1630412612990-783d96dd4d6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHwzRCUyMHByaW50ZWQlMjBmaWd1cmluZSUyMGFjdGlvbiUyMGZpZ3VyZXxlbnwxfHx8fDE3NzEzODE2ODF8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Fantasy Warrior Figurine" class="design-image">
+                        <div class="design-actions">
+                            <button class="action-btn" aria-label="Like">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                                </svg>
+                            </button>
+                            <button class="action-btn" aria-label="Download">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+                                    <polyline points="7 10 12 15 17 10"/>
+                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="design-category">Miniatures</div>
+                    </div>
+                    <div class="design-info">
+                        <div class="design-header">
+                            <h3 class="design-title">Fantasy Warrior Figurine</h3>
+                            <span class="design-price">$25.00</span>
+                        </div>
+                        <div class="design-creator">
+                            <div class="creator-avatar">E</div>
+                            <span class="creator-name">by EpicPrints</span>
+                        </div>
+                        <div class="design-stats">
+                            <div class="design-metrics">
+                                <div class="metric">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                                    </svg>
+                                    4.1k
+                                </div>
+                                <div class="metric">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                        <circle cx="12" cy="12" r="3"/>
+                                    </svg>
+                                    22k
+                                </div>
+                            </div>
+                            <button class="view-details">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design Card 4 -->
+                <div class="design-card">
+                    <div class="design-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1642969164999-979483e21601?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHwzRCUyMHByaW50ZXIlMjBtYWNoaW5lJTIwcHJpbnRpbmd8ZW58MXx8fHwxNzcxMzgxNjczfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Organic Structure Lamp" class="design-image">
+                        <div class="design-actions">
+                            <button class="action-btn" aria-label="Like">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                                </svg>
+                            </button>
+                            <button class="action-btn" aria-label="Download">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+                                    <polyline points="7 10 12 15 17 10"/>
+                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="design-category">Lighting</div>
+                    </div>
+                    <div class="design-info">
+                        <div class="design-header">
+                            <h3 class="design-title">Organic Structure Lamp</h3>
+                            <span class="design-price">$18.50</span>
+                        </div>
+                        <div class="design-creator">
+                            <div class="creator-avatar">L</div>
+                            <span class="creator-name">by LightDesign</span>
+                        </div>
+                        <div class="design-stats">
+                            <div class="design-metrics">
+                                <div class="metric">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                                    </svg>
+                                    1.2k
+                                </div>
+                                <div class="metric">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                        <circle cx="12" cy="12" r="3"/>
+                                    </svg>
+                                    8k
+                                </div>
+                            </div>
+                            <button class="view-details">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design Card 5 -->
+                <div class="design-card">
+                    <div class="design-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1739515054273-a2956b1e094a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHwzRCUyMHByaW50ZWQlMjBtZWNoYW5pY2FsJTIwcGFydCUyMGdlYXJ8ZW58MXx8fHwxNzcxMzgxNjc4fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Desktop Cable Manager" class="design-image">
+                        <div class="design-actions">
+                            <button class="action-btn" aria-label="Like">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                                </svg>
+                            </button>
+                            <button class="action-btn" aria-label="Download">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+                                    <polyline points="7 10 12 15 17 10"/>
+                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="design-category">Organization</div>
+                    </div>
+                    <div class="design-info">
+                        <div class="design-header">
+                            <h3 class="design-title">Desktop Cable Manager</h3>
+                            <span class="design-price">Free</span>
+                        </div>
+                        <div class="design-creator">
+                            <div class="creator-avatar">O</div>
+                            <span class="creator-name">by OfficeHacks</span>
+                        </div>
+                        <div class="design-stats">
+                            <div class="design-metrics">
+                                <div class="metric">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                                    </svg>
+                                    3.5k
+                                </div>
+                                <div class="metric">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                        <circle cx="12" cy="12" r="3"/>
+                                    </svg>
+                                    45k
+                                </div>
+                            </div>
+                            <button class="view-details">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design Card 6 -->
+                <div class="design-card">
+                    <div class="design-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1703221561813-cdaa308cf9e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHwzRCUyMHByaW50ZWQlMjBvYmplY3QlMjB2YXNlfGVufDF8fHx8MTc3MTM4MTY3Nnww&ixlib=rb-4.1.0&q=80&w=1080" alt="Low-Poly Planter Set" class="design-image">
+                        <div class="design-actions">
+                            <button class="action-btn" aria-label="Like">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                                </svg>
+                            </button>
+                            <button class="action-btn" aria-label="Download">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+                                    <polyline points="7 10 12 15 17 10"/>
+                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="design-category">Garden</div>
+                    </div>
+                    <div class="design-info">
+                        <div class="design-header">
+                            <h3 class="design-title">Low-Poly Planter Set</h3>
+                            <span class="design-price">$5.00</span>
+                        </div>
+                        <div class="design-creator">
+                            <div class="creator-avatar">G</div>
+                            <span class="creator-name">by GreenThumb</span>
+                        </div>
+                        <div class="design-stats">
+                            <div class="design-metrics">
+                                <div class="metric">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                                    </svg>
+                                    980
+                                </div>
+                                <div class="metric">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                        <circle cx="12" cy="12" r="3"/>
+                                    </svg>
+                                    12k
+                                </div>
+                            </div>
+                            <button class="view-details">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="footer-brand">
+                        <div class="logo-icon" style="width: 32px; height: 32px;">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 20px; height: 20px;">
+                                <path d="M18 3a3 3 0 00-3 3v12a3 3 0 003 3 3 3 0 003-3 3 3 0 00-3-3H6a3 3 0 00-3 3 3 3 0 003 3 3 3 0 003-3V6a3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3h12a3 3 0 003-3 3 3 0 00-3-3z"/>
+                            </svg>
+                        </div>
+                        <span class="logo-text">NextLayer</span>
+                    </a>
+                    <p class="footer-description">
+                        The premier marketplace for 3D printing enthusiasts. Connect, share, and sell your amazing 3D designs with a global community.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="footer-section-title">Marketplace</h3>
+                    <ul class="footer-links">
+                        <li><a href="gallery.html" class="footer-link">Browse Designs</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer-section-title">Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="generator.html" class="footer-link">Idea Generator</a></li>
+                        <li><a href="copyright.html" class="footer-link">Copyright Info</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer-section-title">Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 NextLayer Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
